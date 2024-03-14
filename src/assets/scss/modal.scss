@@ -1,0 +1,235 @@
+/******************************** Model Popup********************************/
+.modal-dialog-centered {
+  max-width: 736px;
+}
+
+.podcast-successfully {
+  &.payment-successful {
+    p {
+      padding: 40px 0 20px;
+      &.payment-desc {
+        color: #5d5962;
+        font-size: 24px;
+        line-height: 38px;
+        max-width: unset;
+        font-family: AvenirArabic-Medium;
+        @media (max-width: 767px) {
+          font-size: 18px !important;
+        }
+      }
+    }
+    .enhance-btn {
+      &.max-unset {
+        @media (max-width: 767px) {
+          flex-direction: column;
+        }
+        max-width: unset;
+        button {
+          max-width: 289px;
+          @media (max-width: 767px) {
+            max-width: unset;
+            width: 100% !important;
+            &:not(:last-child) {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+      max-width: 335px;
+      margin: 48px auto 44px;
+      @media (max-width: 767px) {
+        margin: 20px auto;
+      }
+    }
+  }
+  .modal-content {
+    border-radius: 32px;
+  }
+}
+
+.podcast-successfully .modal-header {
+  border: 0;
+  justify-content: flex-end;
+}
+
+.podcast-successfully .btn-close {
+  background: url("data:image/svg+xml,%0A%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.7485 15.0246L29.4299 3.34282C30.1901 2.58297 30.1901 1.3544 29.4299 0.594546C28.67 -0.165304 27.4414 -0.165304 26.6816 0.594546L14.9998 12.2763L3.31843 0.594546C2.55822 -0.165304 1.33 -0.165304 0.570154 0.594546C-0.190051 1.3544 -0.190051 2.58297 0.570154 3.34282L12.2516 15.0246L0.570154 26.7063C-0.190051 27.4662 -0.190051 28.6948 0.570154 29.4546C0.948834 29.8336 1.44674 30.0241 1.94429 30.0241C2.44184 30.0241 2.93939 29.8336 3.31843 29.4546L14.9998 17.7729L26.6816 29.4546C27.0606 29.8336 27.5582 30.0241 28.0557 30.0241C28.5533 30.0241 29.0508 29.8336 29.4299 29.4546C30.1901 28.6948 30.1901 27.4662 29.4299 26.7063L17.7485 15.0246Z' fill='%231B0730'/%3E%3C/svg%3E%0A")
+    no-repeat;
+  opacity: 1;
+  border-radius: 0;
+  top: 40px;
+  right: 40px;
+  position: absolute;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer !important;
+}
+
+.podcast-successfully p {
+  font-size: 32px;
+  line-height: 44px;
+  color: #1b0730;
+  font-family: AvenirArabic-Heavy;
+  padding: 40px 0 34px;
+  max-width: 334px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.yes-no {
+  background: rgb(146, 68, 235, 20%);
+  border-radius: 16px;
+  padding: 36px;
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.yes-no p {
+  text-align: center;
+  font-family: AvenirArabic-Heavy;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0;
+  max-width: unset;
+}
+
+.yes-no .enhance-btn {
+  margin-top: 24px;
+}
+
+.box-width {
+  &.admin-delete {
+    max-width: unset !important;
+    margin: 0 auto;
+    padding: 64px 31px;
+    p {
+      &.admin-p-text {
+        max-width: 488px !important;
+      }
+    }
+  }
+  max-width: 486px;
+  margin: 0 auto;
+  padding: 64px;
+  @media (max-width: 767px) {
+    padding: 20px 0;
+  }
+}
+
+.podcast-successfully .box-width p {
+  max-width: 486px !important;
+}
+
+.delete-popup {
+  .modal-dialog-centered {
+    max-width: 584px !important;
+  }
+}
+
+.invite-popup {
+  .modal-dialog-centered {
+    max-width: 628px;
+    .invite {
+      margin: 40px 20px 30px;
+      @media (max-width: 767px) {
+        font-size: 28px;
+      }
+    }
+    .modal-body {
+      padding: 0 40px 40px 40px;
+      .invite-box {
+        max-width: unset !important;
+        padding: 0;
+        .form-style {
+          .email-control {
+            margin-bottom: 14px !important;
+            div {
+              padding: 10px 24px;
+            }
+          }
+          textarea {
+            padding: 16px 24px;
+          }
+        }
+      }
+      .btn-style {
+        width: 200px !important;
+      }
+    }
+  }
+}
+.podcast-successfully {
+  .modal-invite {
+    border: 0;
+    justify-content: center;
+    font-family: AvenirArabic-Heavy;
+    padding: 0px 16px;
+  }
+}
+
+.invite-box {
+  max-width: 486px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.email-control {
+  border-radius: 12px !important;
+  margin-bottom: 30px !important;
+
+  div {
+    background: #eeefff !important;
+    border-radius: 12px !important;
+    border: 0;
+    padding: 15px 24px;
+    color: #5d5962;
+    outline: none;
+    display: flex;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    span {
+      top: 20px !important;
+      left: 30px !important;
+      padding: 0px !important;
+    }
+
+    input {
+      background: #eeefff;
+      border-radius: 5px;
+      font-family: AvenirArabic-Heavy;
+      border: 0;
+      margin: 5px 0px !important;
+      padding: 0px 10px !important;
+      color: #5d5962;
+      outline: none;
+      display: flex;
+      align-items: center !important;
+      justify-content: center !important;
+      font-size: 1rem !important;
+    }
+
+    input:focus {
+      color: #1b0730;
+    }
+
+    div {
+      div {
+        background-color: #8e92db61 !important;
+        font-size: 1rem !important;
+      }
+    }
+  }
+
+  div:focus {
+    border: 1px solid #9244eb !important;
+    color: #1b0730;
+  }
+}
+
+@media (max-width: 767px) {
+  .podcast-successfully.delete-popup img {
+    width: 60px;
+  }
+}

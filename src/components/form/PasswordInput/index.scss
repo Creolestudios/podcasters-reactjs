@@ -1,0 +1,11 @@
+.password-wrapper.from-group-wrapper {
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 0;
+    top: 62%;
+    padding-right: 15px;
+    cursor: pointer;
+  }
+}

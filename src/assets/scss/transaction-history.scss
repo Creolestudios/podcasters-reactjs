@@ -1,0 +1,36 @@
+.transaction-history{
+    .row {
+      .col-lg-12 {
+        .tab-wrapper {
+          .nav-item {
+            width: 33.3%;
+          }
+        }
+      }
+    }
+    .range-selector{
+      .editor-audio-page{
+        .editor-audio-menu{
+          .me-lg-3{
+            @media (min-width: 992px){
+              margin-right: 0 !important;
+            }
+          }
+          .dropdown-toggle {
+            min-width: 140px;
+            height: 42px;
+            padding: 22px 10px;
+            font-size: 14px;
+            font-family: AvenirArabic-Heavy;
+            color: #5d5962;
+            background-position: right 1rem center !important;
+            background:  #EEEFFF;
+            border: none;
+            &::after{
+              margin-left: 3.455em;
+            }
+          }
+        } 
+      } 
+    }
+  }

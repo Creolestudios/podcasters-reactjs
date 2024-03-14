@@ -1,0 +1,14 @@
+.payment-screen-container {
+  height: calc(100vh - 86px);
+  margin-top: -30px;
+  margin-bottom: -30px;
+  width: 99vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  right: 50%;
+  .subscription-block {
+    height: 100%;
+  }
+}

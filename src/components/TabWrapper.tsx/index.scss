@@ -1,0 +1,49 @@
+.tab-wrapper {
+  border-radius: 12px;
+  border: 1px solid #797ba1;
+  background: #fff;
+  padding: 6px;
+  .nav-item {
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    &:hover {
+      border: none !important;
+      outline: none !important;
+    }
+    .nav-link {
+      width: 100%;
+      font-family: AvenirArabic-Heavy;
+      color: #5d5962;
+      text-align: center;
+      font-size: 20px;
+      line-height: normal;
+      padding: 10px 0;
+      border: none !important;
+      outline: none !important;
+      &.active {
+        border-radius: 12px;
+        background: #eeefff;
+        color: #9244eb;
+      }
+      &:hover {
+        border: none !important;
+        outline: none !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .tab-wrapper {
+    .nav-item {
+      @media (max-width: 767px) {
+        width: 100% !important;
+      }
+      .nav-link {
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+  }
+}

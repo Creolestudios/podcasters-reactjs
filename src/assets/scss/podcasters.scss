@@ -1,0 +1,27 @@
+.podcaster-page {
+  @media (max-width: 420px) {
+    width: 95%;
+    #infinite-scrollbar {
+      .podcasts-list {
+        &.search-item {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 346px) {
+    width: 94vw;
+  }
+  #infinite-scrollbar {
+    .podcasts-list {
+      .subscribed-podcaster-img {
+        width: 250px !important;
+        border-radius: 50% !important;
+        aspect-ratio: 1/1;
+        @media (min-width: 769px) and (max-width: 910px) {
+          width: 200px !important;
+        }
+      }
+    }
+  }
+}

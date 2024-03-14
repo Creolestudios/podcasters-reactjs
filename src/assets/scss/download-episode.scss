@@ -1,0 +1,9 @@
+.download-episode-page{
+    .row{
+        .col-lg-12{
+            @media (max-width:664px) {
+                flex-direction: column;
+            }
+        }
+    }
+}

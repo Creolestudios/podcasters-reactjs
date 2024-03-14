@@ -1,0 +1,16 @@
+.modal-wrapper {
+  .modal-content {
+    .modal-close-btn {
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      z-index: 1;
+    }
+    .modal-body {
+      padding: 16px 40px 40px !important;
+      p {
+        padding: 20px 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.checkout-form-container {
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 110px);
+  overflow: auto;
+  padding: 5px;
+  .show {
+    // visibility: visible;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .hide {
+    // visibility: hidden;
+    display: none;
+  }
+
+  form {
+    .from-group-wrapper {
+      input {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.03),
+          0px 3px 6px rgba(0, 0, 0, 0.02);
+        background: #fff;
+        border: 1px solid #e6e6e6;
+        border-radius: 6px !important;
+        width: 500px;
+        padding: 15px 14px;
+        width: 100%;
+
+        &:focus {
+          border-color: hsla(210, 96%, 45%, 50%) !important;
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.03),
+            0px 3px 6px rgba(0, 0, 0, 0.02), 0 0 0 3px hsla(210, 96%, 45%, 25%),
+            0 1px 1px 0 rgba(0, 0, 0, 0.08) !important;
+        }
+
+        @media (max-width: '525px') {
+          width: 300px;
+        }
+      }
+      span {
+        position: relative !important;
+        top: -10px !important;
+      }
+    }
+  }
+
+  .payment-element-loader {
+    height: 100% !important;
+  }
+
+  .coupon-code-section{
+    position: relative;
+    .coupon-icon{
+      position: absolute;
+      top: 18px;
+    }
+    .from-group-wrapper{
+      label{
+        margin-left: 30px;
+      }
+    }
+    hr{
+      border: 2px solid;
+    }
+    button{
+      max-width: 30%;
+      position: absolute;
+      top: 52px;
+      right: 0;
+    }
+    .error{
+      position: absolute;
+      top: unset;
+      bottom: 7px;
+    }
+  }
+  .payment-summary{
+    margin-top: 30px;
+    .amount-info{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .information{
+        color: #5D5962;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .amount{
+        line-height: 22px;
+        font-weight: 800;
+        color: #1B0730;
+      }
+    }
+    hr{
+      margin: 8px 0px; 
+    }
+  }
+}

@@ -1,0 +1,201 @@
+.comments-block {
+  p {
+    &.all-comments {
+      color: #1b0730;
+      font-size: 14px;
+      line-height: 20px;
+      font-family: AvenirArabic-Medium;
+    }
+    color: #1b0730;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: AvenirArabic-Heavy;
+  }
+  .comments-user {
+    margin: 14px 0 18px;
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      margin-right: 15px !important;
+    }
+    .comment-box{
+      .error{
+        bottom: 0px;
+      }
+    }
+    .position-relative {
+      &.w-100 {
+        max-width: 503px;
+      }
+      svg {
+        position: absolute;
+        top: 33%;
+        left: 30px;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+      }
+      .from-group-wrapper {
+        margin-top: -25px;
+        margin-bottom: 0px !important;
+      }
+      input {
+        max-width: 503px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid #1b0730;
+        background: #e2f952;
+        padding-left: 49px;
+        padding-right: 50px;
+        color: #1b0730;
+        font-size: 14px;
+        &::placeholder {
+          color: #1b0730;
+          font-size: 14px;
+        }
+        &:focus {
+          background: rgb(232, 240, 254) !important;
+        }
+      }
+      .msg-sent-icon {
+        opacity: 1;
+        &:disabled {
+          cursor: not-allowed;
+          pointer-events: unset;
+        }
+        svg {
+          right: -16px;
+          left: unset;
+        }
+      }
+    }
+  }
+  .all-comments {
+    position: relative;
+    .dropdown.action-menu {
+      position: absolute;
+      right: 20px;
+      top: 0px;
+      .dropdown-menu-item {
+        span {
+          font-family: AvenirArabic-Medium;
+        }
+        button {
+          &:disabled {
+            svg{
+              rect {
+                fill: #fd6060 !important;
+              }
+              rect + path {
+                fill: #ff5454 !important ;
+              }
+            }
+          }
+        }
+      }
+      .dropdown-menu.show {
+        padding: 0 !important;
+        margin-left: -50px;
+        top: 65px !important;
+      }
+    }
+    img {
+      height: 32px;
+      width: 32px;
+      border-radius: 20px;
+    }
+    .all-details {
+      color: #5d5962;
+      font-family: AvenirArabic-Medium;
+      font-size: 14px;
+      margin-left: 10px;
+      width: 100%;
+      span {
+        color: #1b0730;
+        font-family: AvenirArabic-Heavy;
+      }
+      .comment-text {
+        width: 95%;
+      }
+      .report-number {
+        margin-left: 4px;
+        min-width: 80px;
+        font-family: AvenirArabic-Heavy;
+        color: #9244eb;
+        font-size: 12px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        text-align: right;
+        svg {
+          margin-right: 2px;
+        }
+      }
+    }
+    &.last-element {
+      .dropdown.action-menu {
+        .dropdown-menu.show {
+          top: 0 !important;
+        }
+      }
+    }
+  }
+  .view-all-comments {
+    border-top: 1px solid rgba(121, 123, 161, 20%);
+    border-bottom: 1px solid rgba(121, 123, 161, 20%);
+    padding: 10px 0;
+    font-family: AvenirArabic-Heavy;
+    color: #9244eb;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    text-align: center;
+  }
+}
+.stream-epicode-tab {
+  border: 1px solid #797ba1;
+  padding: 15px;
+  border-radius: 18px;
+  .nav-pills {
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    .nav-item {
+      .nav-link {
+        color: #5d5962;
+        font-size: 16px;
+        background: transparent;
+        border-radius: 12px;
+        margin: 0 6px;
+        border-bottom: 4px solid transparent;
+        &.active {
+          border-radius: 12px !important;
+          border-bottom: 4px solid #eeefff;
+          background: #eeefff;
+        }
+      }
+    }
+  }
+  .tab-content {
+    padding: 0px 9px 9px 9px;
+    max-height: 238px;
+    overflow: auto;
+    p {
+      color: #5d5962;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+.comments-container {
+  max-height: 200px;
+  overflow-y: auto;
+  &.single-item{
+    max-height: unset;
+    overflow-y: unset;
+    #infinite-scrollbar{
+      .infinite-scroll-component{
+        overflow: unset !important;
+      }
+    }
+  }
+}

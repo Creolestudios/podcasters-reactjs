@@ -1,0 +1,13 @@
+.input-group-container {
+  .text {
+    max-width: fit-content;
+    background: #d9daf7 !important;
+    color: #212529;
+    padding-right: 10px;
+  }
+  .input-group {
+    .form-control {
+      margin-bottom: 0;
+    }
+  }
+}

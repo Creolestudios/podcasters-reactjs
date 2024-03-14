@@ -1,0 +1,38 @@
+.select-wrapper-wrapper {
+  .dropdown-menu {
+    ul {
+      max-height: 250px;
+      overflow-y: auto;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        border: 0;
+        padding: 8px 6px;
+      }
+
+      .active-selected-item {
+        background: #f5effd;
+        border-radius: 5px;
+      }
+    }
+
+    .search-list-item {
+      margin-bottom: 15px;
+      .search-container {
+        .from-group-wrapper {
+          width: 190px;
+          input {
+            height: 35px;
+            border-radius: 8px;
+            font-size: 12px;
+          }
+          svg {
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+    }
+  }
+}

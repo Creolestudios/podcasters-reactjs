@@ -1,0 +1,158 @@
+.episode-card-container {
+  .episode-card {
+    background: #eeefff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 24px;
+    position: relative;
+
+    .edit-icon {
+      position: absolute;
+      right: 64px;
+      top: 16px;
+      cursor: pointer;
+    }
+
+    .episode-img {
+      width: 104px;
+      height: 104px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+
+  .episode-details-container {
+    .episode-details-description {
+      // margin-bottom: 14px;
+    }
+
+    h2 {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 30px;
+      font-family: AvenirArabic-Heavy;
+      color: #000000;
+    }
+    p {
+      margin: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #5d5962;
+      font-family: AvenirArabic-Medium;
+      margin-bottom: 6px;
+    }
+    .badge {
+      margin: 8px 10px 0 0;
+    }
+
+    .episode-details {
+      .audio-control-btn {
+        .icon-btn {
+          padding-right: 0;
+          svg {
+            overflow: unset;
+          }
+          &.small-pause-audio-icon{
+            svg {
+              height: 30px;
+              width: 30px;
+            }
+          }
+        }
+      }
+      svg {
+        cursor: pointer;
+      }
+      font-family: AvenirArabic-Medium;
+      color: #1b0730;
+      .date {
+        margin: 0 9px 0 12px;
+      }
+      .time {
+        margin: 0 18px 0 9px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          height: 6px;
+          width: 6px;
+          background-color: #797ba1;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          left: -9px;
+          border-radius: 50%;
+        }
+      }
+      .badge {
+        font-size: 12px;
+        line-height: 24px;
+        height: 30px;
+        min-width: 66px;
+        padding: 3px 16px;
+        margin: 8px 10px 8px 0;
+        font-family: AvenirArabic-Medium;
+      }
+      .tags-btn .bg-primary {
+        background-color: #e2f952 !important;
+        border: 1px solid #000000;
+        border-radius: 6px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #1b0730;
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.episode-card-container{
+  .episode-details-container{
+    .episode-name.cursor-pointer{
+      &:hover{
+        color: #9244eb !important;
+      }
+    }
+    .episode-details{
+      .likes-button {
+        border-radius: 6px;
+        font-size: 12px;
+        padding: 7px 10px;
+        background-color: rgba(146, 68, 235, 0.16);
+        margin: 4px 10px 4px 0;
+        color: #1b0730;
+        span {
+          margin: 0 6px;
+          color: #5d5962;
+        }
+      }
+      @media (max-width: 430px) {
+        .tags-btn{
+          display: none;
+        }
+      }
+    }
+    .dropdown.action-menu{
+      #action-menu-dropdown{
+        svg{
+          max-width: unset;
+          rect{
+            fill: #9244eb;
+          }
+          path{
+            fill: #fff;
+          }
+        }
+      }
+      .dropdown-menu{
+        top: 40px !important;
+        left: -80px !important;
+        padding: 0;
+      }
+    }
+  }
+}

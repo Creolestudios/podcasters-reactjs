@@ -1,0 +1,55 @@
+.tag-wrapper {
+  label {
+    width: 100%;
+
+    .tag-box {
+      background: #eeefff;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      padding: 14px 24px;
+      margin-bottom: 0px;
+
+      &.focus {
+        border-color: #9244eb;
+      }
+
+      .tag {
+        padding: 5px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background: #797ba1;
+        border-radius: 8px;
+        color: #fff;
+        display: block;
+        align-items: center;
+      }
+
+      .close-tag-text {
+        position: absolute;
+        top: -18px;
+        right: -15px;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        transform: scale(0.4);
+      }
+
+      .input-tag {
+        background: #eeefff;
+        border-radius: 12px;
+        border: none !important;
+        padding: 15px 0px;
+        min-width: 100px;
+        outline: none;
+      }
+    }
+
+    .error {
+      top: unset;
+      bottom: -3px;
+    }
+  }
+  margin-bottom: 25px;
+}

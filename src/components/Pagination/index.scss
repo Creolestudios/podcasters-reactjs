@@ -1,0 +1,26 @@
+.pagination {
+  .prev-btn {
+    font-family: AvenirArabic-Medium;
+    color: #5d5962;
+    background: none;
+    outline: none;
+    border: none;
+    &:active {
+      color: #5d5962;
+      background: none;
+    }
+  }
+
+  .page-btn {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    .active {
+      .prev-btn {
+        color: #fff !important;
+      }
+    }
+  }
+}

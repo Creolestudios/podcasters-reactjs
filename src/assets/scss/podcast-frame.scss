@@ -1,0 +1,53 @@
+.five-grid {
+  &.podcast-history {
+    grid-gap: 20px;
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      grid-gap: 16px;
+    }
+    .podcast-frame {
+      margin-bottom: 0px !important;
+      border-radius: 12px !important;
+      .podcast-frame-image-box {
+        img {
+          border-radius: 10px !important;
+        }
+      }
+    }
+  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 14px;
+  .podcast-frame {
+    max-width: unset !important;
+    border-radius: 20px !important;
+    .podcast-frame-image-box {
+      max-width: unset;
+      max-height: unset;
+      border-radius: 18px !important;
+      img {
+        border-radius: 18px !important;
+      }
+    }
+  }
+}
+.view-btn {
+  background-color: rgb(238, 239, 255) !important;
+  height: 38px;
+  width: 38px;
+}
+.container-fluid-swiper {
+  padding: 0 70px;
+}
+.guest-search-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, minmax(50px, auto));
+  grid-gap: 1.5rem;
+  justify-items: center;
+}
+
+.btn-custom {
+  outline: none !important;
+  border-color: #fff !important;
+}

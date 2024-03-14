@@ -1,0 +1,52 @@
+.audio-music-track-card-wrapper {
+  display: flex;
+  background: none;
+  outline: none;
+  border: none;
+  text-align: unset;
+  cursor: pointer !important;
+  position: relative;
+  z-index: 2;
+
+  &:hover {
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  img {
+    // height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+  .right-section {
+    font-family: AvenirArabic-Heavy;
+
+    .title {
+      color: #1b0730;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .other-details {
+      color: #5d5962;
+      line-height: 10px;
+      font-size: 9px;
+      span {
+        position: relative;
+        margin-left: 12px;
+        &::after {
+          position: absolute;
+          content: '';
+          height: 4px;
+          width: 4px;
+          background-color: #797ba1;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          left: -7px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

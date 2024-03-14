@@ -1,0 +1,34 @@
+.from-group-wrapper {
+  margin-bottom: 25px;
+
+  .form-control {
+    background: #eeefff;
+    border-radius: 12px;
+    height: 54px;
+    padding: 15px 24px;
+    &.form-select{
+      padding-right: 40px;
+    }
+  }
+
+  .error {
+    top: unset !important;
+    bottom: -20px;
+
+    @media (max-width: 992px) {
+      top: unset !important;
+      bottom: -30px;
+    }
+  }
+
+  .forgot-password-link {
+    position: absolute;
+    bottom: -35px;
+    right: 0;
+    font-size: 15px;
+    color: #9244eb;
+    &:hover {
+      color: #9244eb;
+    }
+  }
+}

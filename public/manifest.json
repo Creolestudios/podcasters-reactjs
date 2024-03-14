@@ -1,0 +1,21 @@
+{
+  "short_name": "Musajjel",
+  "name": "Musajjel",
+  "description": "You deserve to be heard",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "64*64 32*32 24*24 16x16"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

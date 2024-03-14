@@ -1,0 +1,41 @@
+.add-promocode-popup {
+    .modal-dialog {
+        height: 90vh !important;
+        overflow: hidden;
+        .modal-content{
+            display: flex;
+            overflow: hidden;
+            height: 100%;
+            .modal-body{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                overflow: hidden;
+                .popup-body-container{
+                    display: flex;
+                    flex:1;
+                    overflow: hidden;
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        gap: 10px;
+                        .fields-container{
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            overflow: hidden auto;
+                            padding-right: 10px;
+                        }
+                        button{
+                            flex: none;
+                        }
+                    }
+                }
+                .enhance-btn{
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

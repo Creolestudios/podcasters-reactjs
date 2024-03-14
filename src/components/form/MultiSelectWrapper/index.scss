@@ -1,0 +1,24 @@
+.rmsc {
+  .dropdown-container {
+    background-color: transparent !important;
+    border: none !important;
+    &:focus-within{
+        box-shadow: none !important;
+    }
+}
+&.form-control{
+    padding: 0px !important;
+}
+.dropdown-heading {
+    padding: 15px 24px !important;
+    height: 100% !important;
+  }
+  .dropdown-content{
+    .panel-content{
+        border-radius: 12px !important;
+    }
+    input[type=checkbox] {
+      appearance: auto !important;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.search-container {
+  .from-group-wrapper {
+    position: relative;
+    width: 280px;
+    margin: 0;
+    input {
+      background: #fff;
+      border: 1px solid #797ba1;
+      padding-left: 45px;
+
+      &:focus {
+        border: 1px solid #797ba1 !important;
+      }
+    }
+
+    svg {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 21px;
+      height: 21px;
+      padding-right: 0px !important;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+input[type='range'] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  /* New additions */
+  height: 6px;
+  background: #797ba1;
+}
+
+/* Thumb: webkit */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  border: 3px solid #797ba1 !important;
+  border-radius: 50%;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+/* Thumb: Firefox */
+input[type='range']::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  border: 3px solid #797ba1 !important;
+  border-radius: 50%;
+  border: none;
+  transition: 0.2s ease-in-out;
+}

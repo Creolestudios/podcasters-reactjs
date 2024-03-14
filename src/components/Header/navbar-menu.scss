@@ -1,0 +1,92 @@
+.navbar-menu-container {
+  .nav-item {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    position: relative;
+    font-family: AvenirArabic-Heavy;
+    &.link-disabled{
+      a{
+        opacity: 0.7;
+        cursor: default;
+      }
+    }
+    @media (max-width:991px) {
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      background: #fff;
+      width: 0;
+      height: 2px;
+      opacity: 0;
+      transition: 0.2s all ease-in-out;
+    }
+    &.active-menu {
+      font-weight: 900;
+      &::after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+
+  .nav-dropdown-title-container {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+    &::after {
+      color: #fff;
+    }
+  }
+
+  .dropdown-menu {
+    .dropdown-menu-item {
+      a {
+        padding: 4px 16px;
+        svg {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  @media (max-width:991px) {
+  .search-bar > div {
+    margin-bottom: 16px !important;
+  }
+  }
+  .manage-podcast-btn{
+    display: flex;
+    width: 181px;
+    height: 54px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin: 0 20px;
+    color: #1B0730;
+    background: var(--Lime, #E2F952) !important;
+    padding: 15px 16px;
+    &:hover{
+      color: #1B0730 !important;
+    }
+    @media (max-width:991px) {
+      margin: 10px 0;
+    }
+  }
+}

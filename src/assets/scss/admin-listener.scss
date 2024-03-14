@@ -1,0 +1,197 @@
+.admin-listener-page {
+  &.content-page {
+    margin-left: 0;
+    padding: 0;
+  }
+  .listener-container {
+    .listener-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0px;
+    }
+    .listener-table-section {
+      .table-container {
+        background: white;
+      }
+    }
+  }
+}
+.listener-block-popup,
+.add-listener-popup,
+.edit-plan-popup {
+  .modal-dialog {
+    .modal-content {
+      .modal-close-btn {
+        top: 30px;
+      }
+      .modal-body {
+        p {
+          max-width: unset;
+        }
+        .popup-body-container {
+          .reason-text,
+          .from-group-wrapper {
+            position: relative;
+            .error{
+              margin-left: 0;
+            }
+            label {
+              font-family: AvenirArabic-Medium;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: normal;
+              letter-spacing: 0.32px;
+            }
+          }
+          .actived-plan,
+          .upgrade-plan {
+            > span {
+              font-family: AvenirArabic-Medium;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 22px;
+              letter-spacing: 0.32px;
+            }
+          }
+        }
+        .enhance-btn, button[type='submit'] {
+          margin: 0 auto !important;
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}
+.add-listener-popup {
+  .modal-content {
+    max-width: 628px;
+  }
+}
+.edit-plan-popup {
+  .popup-body-container {
+    .actived-plan {
+      margin-bottom: 30px;
+      .info-plan {
+        margin-top: 10px;
+        border-radius: 16px;
+        background: #eeefff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .status {
+          color: #797ba1;
+        }
+      }
+    }
+    .upgrade-plan {
+      margin-bottom: 30px;
+      .editor-audio-page {
+        .editor-audio-menu {
+          margin-top: 10px;
+          .me-lg-3 {
+            width: 100%;
+            margin-right: 0 !important;
+            button {
+              width: inherit !important;
+              position: relative;
+              justify-content: flex-start;
+              &::after {
+                // margin-left: 80%;
+                margin-left: 0;
+                position: absolute;
+                right: 20px;
+              }
+            }
+            ul {
+              width: 87%;
+              height: 220px;
+              overflow: auto;
+              li {
+                button {
+                  width: 100% !important;
+                }
+              }
+            }
+          }
+          .dropdown-toggle {
+            min-width: 140px;
+            height: 68px;
+            padding: 20px;
+            font-size: 16px;
+            font-family: AvenirArabic-Medium;
+            color: #1b0730;
+            background-position: right 1rem center !important;
+            background: #eeefff;
+            border: none;
+            &::after {
+              margin-left: 3.455em;
+            }
+            .period {
+              right: 50px;
+              color: #797ba1;
+            }
+          }
+        }
+      }
+    }
+    .save-btn{
+      display: flex;
+      width: 190px;
+      height: 54px;
+      padding: 18px 114px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: auto;
+    }
+    .details {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .plan-name {
+        font-family: AvenirArabic-Medium;
+        color: #1b0730;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+      }
+      .price {
+        color: #9244eb;
+        font-family: AvenirArabic-Medium;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .period {
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+}
+.listener-delete-modal {
+  &.modal-wrapper .modal-content .modal-body {
+    padding: 40px !important;
+    svg {
+      height: 60px;
+      width: 60px;
+      position: relative;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    p {
+      max-width: 380px;
+    }
+    .enhance-btn {
+      margin: 15px 0px;
+    }
+  }
+}

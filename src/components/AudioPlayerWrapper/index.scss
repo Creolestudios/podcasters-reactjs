@@ -1,0 +1,222 @@
+.music-player {
+  width: 95%;
+  margin: 0 10px;
+  .rhap_container {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    .rhap_header {
+      position: absolute;
+      left: 265px;
+      top: 35px;
+      font-family: AvenirArabic-Medium;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .rhap_main {
+      flex-direction: row-reverse !important;
+    }
+  }
+  .rhap_progress-filled {
+    background-color: #e2f952 !important;
+  }
+  .rhap_progress-indicator {
+    background-color: #e2f952 !important;
+  }
+  .rhap_volume-controls {
+    display: none !important;
+    flex: none !important;
+  }
+  .rhap_additional-controls {
+    flex: none !important;
+  }
+  .rhap_repeat-button {
+    display: none !important;
+    flex: none !important;
+  }
+  .rhap_controls-section {
+    display: flex !important;
+    flex: none !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .heading-music {
+    margin-left: 10%;
+    position: absolute;
+    top: 17%;
+    left: 20px;
+  }
+  .rhap_current-time {
+    color: #fff !important;
+    position: relative;
+    top: 15px;
+  }
+  .rhap_progress-container {
+    position: relative;
+    top: 15px;
+  }
+
+  .rhap_total-time {
+    color: #fff !important;
+    position: relative;
+    top: 15px;
+  }
+
+  .rhap_progress-section {
+    width: 100% !important;
+  }
+
+  .rhap_play-pause-button {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  @media only screen and (max-width: 768px) {
+    .rhap_progress-container {
+      position: relative;
+      top: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 365px) {
+    .rhap_progress-container {
+      position: relative !important;
+      top: 15px !important;
+    }
+    marquee {
+      width: 65% !important;
+      margin-left: 54px !important;
+      margin-top: 5px !important;
+    }
+    .rhap_main-controls {
+      transform: scale(0.6) !important;
+      margin-top: -89px !important;
+      margin-left: -270px !important;
+    }
+  }
+
+  @media screen and (min-device-width: 366px) and (max-device-width: 376px) {
+    .rhap_progress-container {
+      position: relative !important;
+      top: 15px !important;
+    }
+    marquee {
+      width: 65% !important;
+      margin-left: 54px !important;
+      margin-top: 5px !important;
+    }
+    .rhap_main-controls {
+      transform: scale(0.6) !important;
+      margin-top: -89px !important;
+      margin-left: -284px !important;
+    }
+  }
+
+  @media screen and (min-device-width: 377px) and (max-device-width: 394px) {
+    .rhap_progress-container {
+      position: relative !important;
+      top: 15px !important;
+    }
+    marquee {
+      width: 68% !important;
+      margin-left: 54px !important;
+      margin-top: 5px !important;
+    }
+    .rhap_main-controls {
+      transform: scale(0.6) !important;
+      margin-top: -89px !important;
+      margin-left: -300px !important;
+    }
+  }
+
+  @media screen and (min-device-width: 395px) and (max-device-width: 415px) {
+    .rhap_progress-container {
+      position: relative !important;
+      top: 15px !important;
+    }
+    marquee {
+      width: 70% !important;
+      margin-left: 54px !important;
+      margin-top: 5px !important;
+    }
+    .rhap_main-controls {
+      transform: scale(0.6) !important;
+      margin-top: -89px !important;
+      margin-left: -325px !important;
+    }
+  }
+}
+
+@media (max-width: 494px) {
+  .play-fixed-box{
+    border-radius: 18px 18px 0px 0px;
+  }
+  .close-audioPlayer {
+    top: 10px !important;
+    height: 38px !important;
+    width: 30px !important;
+  }
+  .music-player{
+    .rhap_container{
+      .rhap_header{
+        position: relative;
+        top: 10px;
+        left: 0;
+        width: 80%;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+      }
+      .rhap_main{
+        flex-direction: column !important;
+        .rhap_progress-section{
+          position: relative;
+          top: 10px;
+          z-index: 1;
+          .rhap_current-time{
+            position: absolute !important;
+            top: 25px;
+          }
+          .rhap_total-time{
+            position: absolute !important;
+            top: 25px;
+            right: 0;
+          }
+          .rhap_progress-container{
+            position: absolute !important;
+            width: 100%;
+            margin: 0;
+          }
+        }
+        .rhap_controls-section{
+          margin-top: 0px;
+          position: relative;
+          top: 15px;
+          .rhap_main-controls{
+            transform: scale(0.6) !important;
+            margin: 0px !important;
+          }
+        }
+      }
+    } 
+  }
+}
+
+@media (max-width: 420px){
+  .music-player{
+    .rhap_container{
+      .rhap_main{
+        .rhap_progress-section{
+          top: 0px !important;
+          .rhap_current-time,.rhap_total-time{
+            top: 40px !important;
+          }
+        }
+      }
+    }
+  }
+}

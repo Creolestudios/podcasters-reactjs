@@ -1,0 +1,13 @@
+textarea {
+  &.form-control {
+    height: auto !important;
+    background-color: #eeefff;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 16px 17px;
+    margin-bottom: 0px;
+    &:focus {
+      background-color: #eeefff;
+    }
+  }
+}
